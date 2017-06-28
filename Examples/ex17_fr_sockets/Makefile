@@ -7,7 +7,7 @@
 ###################################################
 
 # Variables for making this Makefile slightly easier to handle
-EPIC_PATH=/Users/Tim/Desktop/EpicSTM32
+EPIC_PATH=../../
 HAL_PATH=$(EPIC_PATH)/Core/STM32F4xx_HAL_Driver
 CMSIS_PATH=$(EPIC_PATH)/Core/CMSIS
 FREERTOS_PATH=$(EPIC_PATH)/Core/FreeRTOS/Source
@@ -32,7 +32,6 @@ SRCS += $(PLATFORM_PATH)/*.c
 SRCS += $(FREERTOS_PATH)/*.c $(FREERTOS_PATH)/portable/GCC/ARM_CM4F/*.c $(FREERTOS_PATH)/portable/MemMang/heap_3.c
 SRCS += $(FREERTOS_PATH)/CMSIS_RTOS/*.c
 SRCS += $(LWIP_PATH)/src/core/*.c $(LWIP_PATH)/src/api/*.c $(LWIP_PATH)/src/core/ipv4/*.c $(LWIP_PATH)/src/netif/*.c $(LWIP_PATH)/system/OS/*.c
-
 SRCS += $(TINYPRINTF_PATH)/*.c
 
 ###################################################
