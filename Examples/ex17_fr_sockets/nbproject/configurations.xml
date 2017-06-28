@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="Core"
+                   displayName="Core"
+                   projectFiles="true"
+                   root="../../Core">
+      <logicalFolder name="FreeRTOS" displayName="FreeRTOS" projectFiles="true">
+        <logicalFolder name="Source" displayName="Source" projectFiles="true">
+          <logicalFolder name="CMSIS_RTOS" displayName="CMSIS_RTOS" projectFiles="true">
+            <itemPath>../../Core/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="include" displayName="include" projectFiles="true">
+            <itemPath>../../Core/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/StackMacros.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/croutine.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/event_groups.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/list.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/mpu_wrappers.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/portable.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/projdefs.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/queue.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/semphr.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/task.h</itemPath>
+            <itemPath>../../Core/FreeRTOS/Source/include/timers.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="portable" displayName="portable" projectFiles="true">
+            <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
+              <logicalFolder name="ARM_CM4F" displayName="ARM_CM4F" projectFiles="true">
+                <itemPath>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c</itemPath>
+                <itemPath>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="MemMang" displayName="MemMang" projectFiles="true">
+              <itemPath>../../Core/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../../Core/FreeRTOS/Source/croutine.c</itemPath>
+          <itemPath>../../Core/FreeRTOS/Source/event_groups.c</itemPath>
+          <itemPath>../../Core/FreeRTOS/Source/list.c</itemPath>
+          <itemPath>../../Core/FreeRTOS/Source/queue.c</itemPath>
+          <itemPath>../../Core/FreeRTOS/Source/tasks.c</itemPath>
+          <itemPath>../../Core/FreeRTOS/Source/timers.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="LwIP" displayName="LwIP" projectFiles="true">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="api" displayName="api" projectFiles="true">
+            <itemPath>../../Core/LwIP/src/api/api_lib.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/api_msg.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/err.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/netbuf.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/netdb.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/netifapi.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/sockets.c</itemPath>
+            <itemPath>../../Core/LwIP/src/api/tcpip.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="core" displayName="core" projectFiles="true">
+            <logicalFolder name="ipv4" displayName="ipv4" projectFiles="true">
+              <itemPath>../../Core/LwIP/src/core/ipv4/autoip.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/icmp.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/igmp.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/inet.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/inet_chksum.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/ip.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/ip_addr.c</itemPath>
+              <itemPath>../../Core/LwIP/src/core/ipv4/ip_frag.c</itemPath>
+            </logicalFolder>
+            <itemPath>../../Core/LwIP/src/core/def.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/dhcp.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/dns.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/init.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/lwip_timers.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/mem.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/memp.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/netif.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/pbuf.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/raw.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/stats.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/sys.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/tcp.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/tcp_in.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/tcp_out.c</itemPath>
+            <itemPath>../../Core/LwIP/src/core/udp.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="netif" displayName="netif" projectFiles="true">
+            <itemPath>../../Core/LwIP/src/netif/etharp.c</itemPath>
+            <itemPath>../../Core/LwIP/src/netif/slipif.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="system" displayName="system" projectFiles="true">
+          <logicalFolder name="OS" displayName="OS" projectFiles="true">
+            <itemPath>../../Core/LwIP/system/OS/sys_arch.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="printf" projectFiles="true">
+        <itemPath>debugger_printf.c</itemPath>
+        <itemPath>debugger_printf.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="STM32F4xx_HAL_Driver"
+                     displayName="STM32F4xx_HAL_Driver"
+                     projectFiles="true">
+        <logicalFolder name="Src" displayName="Src" projectFiles="true">
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c</itemPath>
+          <itemPath>../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <df root="." name="0">
+      <df name="platform">
+        <in>app_ethernet.c</in>
+        <in>cmsis_nvic.c</in>
+        <in>ethernetif.c</in>
+        <in>lwip_init.c</in>
+        <in>platform.c</in>
+        <in>platform.h</in>
+        <in>stm32f4xx_hal_msp.c</in>
+        <in>stm32f4xx_it.c</in>
+        <in>stm32f4xx_nucleo_144.c</in>
+        <in>system_stm32f4xx.c</in>
+      </df>
+      <in>main.c</in>
+      <in>main.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU_1|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-g -O1"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>../../Core/CMSIS/Include</pElem>
+              <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+              <pElem>../../Core/FreeRTOS/Source/include</pElem>
+              <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+              <pElem>../../Core/FreeRTOS/Source/CMSIS_RTOS</pElem>
+              <pElem>../../Platforms/nucleof429zi</pElem>
+              <pElem>../../Core/LwIP/src/include</pElem>
+              <pElem>../../Core/LwIP/src/include/lwip</pElem>
+              <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+              <pElem>../../Core/LwIP/src/include/ipv6</pElem>
+              <pElem>../../Core/LwIP/system/OS</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>STM32F429xx</Elem>
+            </preprocessorList>
+          </cTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../../Core/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/croutine.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/event_groups.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/list.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/portable/MemMang/heap_1.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/queue.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/tasks.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/FreeRTOS/Source/timers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/api_lib.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/api_msg.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/err.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/netbuf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/netdb.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/netifapi.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/sockets.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/api/tcpip.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/def.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/dhcp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/dns.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/init.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/autoip.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/icmp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/igmp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/inet.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/inet_chksum.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/ip.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/ip_addr.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/ipv4/ip_frag.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/lwip_timers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/mem.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/memp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/netif.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/pbuf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/raw.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/stats.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/sys.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/tcp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/tcp_in.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/tcp_out.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/core/udp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/netif/etharp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/src/netif/slipif.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/LwIP/system/OS/sys_arch.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="../../Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="debugger_printf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="debugger_printf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="main.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="platform/app_ethernet.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/cmsis_nvic.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/ethernetif.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/lwip_init.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/platform.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/platform.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="platform/stm32f4xx_hal_msp.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/stm32f4xx_it.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/stm32f4xx_nucleo_144.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="platform/system_stm32f4xx.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
