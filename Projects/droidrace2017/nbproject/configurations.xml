@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="Core">
+        <df name="FreeRTOS">
+          <df name="Source">
+            <df name="CMSIS_RTOS">
+              <in>cmsis_os.c</in>
+            </df>
+            <in>croutine.c</in>
+            <in>event_groups.c</in>
+            <in>list.c</in>
+            <in>queue.c</in>
+            <in>tasks.c</in>
+            <in>timers.c</in>
+          </df>
+        </df>
+        <df name="FreeRTOS-Plus">
+          <df name="Source">
+            <df name="FreeRTOS-Plus-CLI">
+              <in>FreeRTOS_CLI.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="LwIP">
+          <df name="src">
+            <df name="api">
+              <in>api_lib.c</in>
+              <in>api_msg.c</in>
+              <in>err.c</in>
+              <in>netbuf.c</in>
+              <in>netdb.c</in>
+              <in>netifapi.c</in>
+              <in>sockets.c</in>
+              <in>tcpip.c</in>
+            </df>
+            <df name="core">
+              <df name="ipv4">
+                <in>autoip.c</in>
+                <in>icmp.c</in>
+                <in>igmp.c</in>
+                <in>inet.c</in>
+                <in>inet_chksum.c</in>
+                <in>ip.c</in>
+                <in>ip_addr.c</in>
+                <in>ip_frag.c</in>
+              </df>
+              <in>def.c</in>
+              <in>dhcp.c</in>
+              <in>dns.c</in>
+              <in>init.c</in>
+              <in>lwip_timers.c</in>
+              <in>mem.c</in>
+              <in>memp.c</in>
+              <in>netif.c</in>
+              <in>pbuf.c</in>
+              <in>raw.c</in>
+              <in>stats.c</in>
+              <in>sys.c</in>
+              <in>tcp.c</in>
+              <in>tcp_in.c</in>
+              <in>tcp_out.c</in>
+              <in>udp.c</in>
+            </df>
+            <df name="netif">
+              <in>etharp.c</in>
+              <in>slipif.c</in>
+            </df>
+          </df>
+          <df name="system">
+            <df name="OS">
+              <in>sys_arch.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="STM32F4xx_HAL_Driver">
+          <df name="Src">
+            <in>stm32f4xx_hal.c</in>
+            <in>stm32f4xx_hal_adc.c</in>
+            <in>stm32f4xx_hal_adc_ex.c</in>
+            <in>stm32f4xx_hal_can.c</in>
+            <in>stm32f4xx_hal_cec.c</in>
+            <in>stm32f4xx_hal_cortex.c</in>
+            <in>stm32f4xx_hal_crc.c</in>
+            <in>stm32f4xx_hal_cryp.c</in>
+            <in>stm32f4xx_hal_cryp_ex.c</in>
+            <in>stm32f4xx_hal_dac.c</in>
+            <in>stm32f4xx_hal_dac_ex.c</in>
+            <in>stm32f4xx_hal_dcmi.c</in>
+            <in>stm32f4xx_hal_dcmi_ex.c</in>
+            <in>stm32f4xx_hal_dma.c</in>
+            <in>stm32f4xx_hal_dma2d.c</in>
+            <in>stm32f4xx_hal_dma_ex.c</in>
+            <in>stm32f4xx_hal_dsi.c</in>
+            <in>stm32f4xx_hal_eth.c</in>
+            <in>stm32f4xx_hal_flash.c</in>
+            <in>stm32f4xx_hal_flash_ex.c</in>
+            <in>stm32f4xx_hal_flash_ramfunc.c</in>
+            <in>stm32f4xx_hal_fmpi2c.c</in>
+            <in>stm32f4xx_hal_fmpi2c_ex.c</in>
+            <in>stm32f4xx_hal_gpio.c</in>
+            <in>stm32f4xx_hal_hash.c</in>
+            <in>stm32f4xx_hal_hash_ex.c</in>
+            <in>stm32f4xx_hal_hcd.c</in>
+            <in>stm32f4xx_hal_i2c.c</in>
+            <in>stm32f4xx_hal_i2c_ex.c</in>
+            <in>stm32f4xx_hal_i2s.c</in>
+            <in>stm32f4xx_hal_i2s_ex.c</in>
+            <in>stm32f4xx_hal_irda.c</in>
+            <in>stm32f4xx_hal_iwdg.c</in>
+            <in>stm32f4xx_hal_lptim.c</in>
+            <in>stm32f4xx_hal_ltdc.c</in>
+            <in>stm32f4xx_hal_ltdc_ex.c</in>
+            <in>stm32f4xx_hal_nand.c</in>
+            <in>stm32f4xx_hal_nor.c</in>
+            <in>stm32f4xx_hal_pccard.c</in>
+            <in>stm32f4xx_hal_pcd.c</in>
+            <in>stm32f4xx_hal_pcd_ex.c</in>
+            <in>stm32f4xx_hal_pwr.c</in>
+            <in>stm32f4xx_hal_pwr_ex.c</in>
+            <in>stm32f4xx_hal_qspi.c</in>
+            <in>stm32f4xx_hal_rcc.c</in>
+            <in>stm32f4xx_hal_rcc_ex.c</in>
+            <in>stm32f4xx_hal_rng.c</in>
+            <in>stm32f4xx_hal_rtc.c</in>
+            <in>stm32f4xx_hal_rtc_ex.c</in>
+            <in>stm32f4xx_hal_sai.c</in>
+            <in>stm32f4xx_hal_sai_ex.c</in>
+            <in>stm32f4xx_hal_sd.c</in>
+            <in>stm32f4xx_hal_sdram.c</in>
+            <in>stm32f4xx_hal_smartcard.c</in>
+            <in>stm32f4xx_hal_spdifrx.c</in>
+            <in>stm32f4xx_hal_spi.c</in>
+            <in>stm32f4xx_hal_sram.c</in>
+            <in>stm32f4xx_hal_tim.c</in>
+            <in>stm32f4xx_hal_tim_ex.c</in>
+            <in>stm32f4xx_hal_uart.c</in>
+            <in>stm32f4xx_hal_usart.c</in>
+            <in>stm32f4xx_hal_wwdg.c</in>
+            <in>stm32f4xx_ll_fmc.c</in>
+            <in>stm32f4xx_ll_fsmc.c</in>
+            <in>stm32f4xx_ll_sdmmc.c</in>
+            <in>stm32f4xx_ll_usb.c</in>
+          </df>
+        </df>
+        <df name="tinyprintf">
+          <in>tinyprintf.c</in>
+        </df>
+      </df>
+      <df name="nucleof429zi">
+        <df name="net">
+          <in>app_ethernet.c</in>
+          <in>ethernetif.c</in>
+          <in>lwip_init.c</in>
+        </df>
+        <in>cmsis_nvic.c</in>
+        <in>debugger_printf.c</in>
+        <in>platform.c</in>
+        <in>stm32f4xx_hal_msp.c</in>
+        <in>stm32f4xx_it.c</in>
+        <in>stm32f4xx_nucleo_144.c</in>
+        <in>system_stm32f4xx.c</in>
+      </df>
+      <in>digiscope_adc.c</in>
+      <in>digiscope_cli.c</in>
+      <in>digiscope_lcd.c</in>
+      <in>digiscope_mux.c</in>
+      <in>digiscope_mux.h</in>
+      <in>digiscope_net.c</in>
+      <in>digiscope_offset.c</in>
+      <in>digiscope_offset.h</in>
+      <in>digiscope_settings.c</in>
+      <in>digiscope_settings.h</in>
+      <in>digiscope_signalgen.c</in>
+      <in>digiscope_vertical.c</in>
+      <in>digiscope_vertical.h</in>
+      <in>digiscope_voltagedetect.c</in>
+      <in>digiscope_voltagedetect.h</in>
+      <in>lowlevel_dac.c</in>
+      <in>lowlevel_dac.h</in>
+      <in>lowlevel_digitalpot.c</in>
+      <in>lowlevel_digitalpot.h</in>
+      <in>lowlevel_pga.c</in>
+      <in>lowlevel_pga.h</in>
+      <in>lowlevel_spi1_bus.c</in>
+      <in>lowlevel_spi1_bus.h</in>
+      <in>main.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU_1|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-g -O1 -std=gnu99"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>main.elf</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="Core/FreeRTOS-Plus/Source/FreeRTOS-Plus-CLI/FreeRTOS_CLI.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/croutine.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/event_groups.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/list.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/queue.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/tasks.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/FreeRTOS/Source/timers.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/api_lib.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/api_msg.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/err.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/netbuf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/netdb.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/netifapi.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/sockets.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/api/tcpip.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/api</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/netif</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/def.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/dhcp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/netif</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/dns.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/init.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/autoip.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/icmp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/igmp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/inet.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/inet_chksum.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/ip.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/ip_addr.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/ipv4/ip_frag.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/lwip_timers.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/netif</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/mem.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/memp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/netif.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/netif</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/pbuf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/raw.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/stats.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/sys.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/tcp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/tcp_in.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/tcp_out.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/core/udp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/core</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/netif/etharp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/LwIP/src/netif</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/netif</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/src/netif/slipif.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/LwIP/system/OS/sys_arch.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Src</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Core/tinyprintf/tinyprintf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="digiscope_adc.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+            <pElem>../../Core/tinyprintf</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="digiscope_cli.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS-Plus/Source/FreeRTOS-Plus-CLI</pElem>
+            <pElem>../../Core/tinyprintf</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="digiscope_lcd.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="digiscope_mux.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="digiscope_mux.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="digiscope_net.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Core/tinyprintf</pElem>
+            <pElem>.</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="digiscope_offset.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="digiscope_offset.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="digiscope_settings.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="digiscope_settings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="digiscope_signalgen.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Core/tinyprintf</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="digiscope_vertical.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="digiscope_vertical.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="digiscope_voltagedetect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="digiscope_voltagedetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="0/Core/FreeRTOS-Plus">
+        <cTool>
+          <incDir>
+            <pElem>../../Core/FreeRTOS-Plus/Source/FreeRTOS-Plus-CLI</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Core/FreeRTOS/Source/CMSIS_RTOS">
+        <cTool>
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source/CMSIS_RTOS</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Core/LwIP/system">
+        <cTool>
+          <incDir>
+            <pElem>../../Core/LwIP/system/OS</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Core/tinyprintf">
+        <cTool>
+          <incDir>
+            <pElem>../../Core/tinyprintf</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/nucleof429zi/net">
+        <cTool>
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi/net</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="lowlevel_dac.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lowlevel_dac.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lowlevel_digitalpot.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lowlevel_digitalpot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lowlevel_pga.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lowlevel_pga.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lowlevel_spi1_bus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lowlevel_spi1_bus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Core/FreeRTOS/Source/portable/GCC/ARM_CM4F</pElem>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/cmsis_nvic.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/debugger_printf.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/tinyprintf</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/net/app_ethernet.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/net/ethernetif.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/FreeRTOS/Source/CMSIS_RTOS</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/net/lwip_init.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi/arch</pElem>
+            <pElem>../../Core/LwIP/src/include/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4/lwip</pElem>
+            <pElem>../../Core/LwIP/src/include</pElem>
+            <pElem>../../Core/LwIP/src/include/ipv4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/platform.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/stm32f4xx_hal_msp.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/stm32f4xx_it.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/LwIP/system/OS</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/stm32f4xx_nucleo_144.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/STM32F4xx_HAL_Driver/Inc</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="nucleof429zi/system_stm32f4xx.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../Platforms/nucleof429zi</pElem>
+            <pElem>../../Core/CMSIS/Include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
