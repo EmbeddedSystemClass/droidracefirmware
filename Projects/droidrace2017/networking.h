@@ -1,10 +1,7 @@
 /*
  * ============================================================================
- * ENGG4810 Team 3
  * Created by Timothy Ryan Hadwen
  * Created: Mar 26, 2016
- * ============================================================================
- * Filename: digiscope_net.h
  * ============================================================================
  */
 
@@ -28,7 +25,7 @@ extern "C" {
 #include "lwip_init.h"
 #include <string.h>
 
-void digiscope_net_init();
+void networking_init();
 void TCPTask(void * pvParameters);
 
 typedef struct {

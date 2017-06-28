@@ -1,16 +1,13 @@
 /*
  * ============================================================================
- * ENGG4810 Team 3
  * Created by Timothy Ryan Hadwen
  * Created: Mar 25, 2016
- * ============================================================================
- * Filename: digiscope_cli.c
  * ============================================================================
  */
 
 extern struct netif xnetif;
 
-#include "digiscope_cli.h"
+#include "droid_cli.h"
 
 /* CLI Commands */
 static CLI_Command_Definition_t xEcho = {
@@ -20,7 +17,7 @@ static CLI_Command_Definition_t xEcho = {
     1
 };
 
-void digiscope_cli_init() {
+void droid_cli_init() {
     xTaskCreate((void *) &CLI_Task, (const signed char *) "CLI", mainCLI_TASK_STACK_SIZE, NULL, mainCLI_PRIORITY, NULL);
 
     FreeRTOS_CLIRegisterCommand(&xEcho);

@@ -1,10 +1,7 @@
 /*
  * ============================================================================
- * ENGG4810 Team 3
  * Created by Timothy Ryan Hadwen
  * Created: Mar 14, 2016
- * ============================================================================
- * Filename: main.c
  * ============================================================================
  */
 
@@ -24,8 +21,8 @@
 int main(void) {
     Hardware_init();
 
-    digiscope_cli_init();
-    digiscope_net_init();
+    droid_cli_init();
+    networking_init();
 
     /* Start the LED Task */
     xTaskCreate((void *) &LEDTask, (const signed char *) "LED", LEDTASK_STACK_SIZE, NULL, LEDTASK_PRIORITY, NULL);

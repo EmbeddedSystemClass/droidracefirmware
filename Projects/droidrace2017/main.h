@@ -1,10 +1,7 @@
 /*
  * ============================================================================
- * ENGG4810 Team 3
  * Created by Timothy Ryan Hadwen
  * Created: Mar 14, 2016
- * ============================================================================
- * Filename: main.h
  * ============================================================================
  */
 
@@ -17,7 +14,6 @@ extern "C" {
 
     /* Function Prototypes */
     static void Hardware_init();
-    void TCPTask(void * pvParameters);
     void LEDTask(void*);
     void vApplicationIdleHook(void);
     static void SystemClock_Config(void);
@@ -39,8 +35,8 @@ extern "C" {
 #include "lwip_init.h"
 #include "debugger_printf.h"
 
-#include "digiscope_cli.h"
-#include "digiscope_net.h"
+#include "droid_cli.h"
+#include "networking.h"
 
 
 

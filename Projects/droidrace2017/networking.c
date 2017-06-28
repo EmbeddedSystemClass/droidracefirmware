@@ -1,21 +1,18 @@
 /*
  * ============================================================================
- * ENGG4810 Team 3
  * Created by Timothy Ryan Hadwen
  * Created: Mar 26, 2016
  * ============================================================================
- * Filename: digiscope_net.c
- * ============================================================================
  */
 
-#include "digiscope_net.h"
+#include "networking.h"
 
 int currentConnectionFD = -1;
 void handleReceivedPacket(char *data, int length);
 void monitorConnection(void);
 int sendTcpPacket(char *sendBuf, int size);
 
-void digiscope_net_init() {
+void networking_init() {
 	// Start LwIP
 	LwIP_Init();
 
@@ -121,6 +118,7 @@ void monitorConnection() {
 }
 
 void handleReceivedPacket(char *data, int length) {
+	int i;
 	for (i = 0; i < length; i++) {
 		/* Convert to ASCII upper case */
 		if (data[i] > 96) {
