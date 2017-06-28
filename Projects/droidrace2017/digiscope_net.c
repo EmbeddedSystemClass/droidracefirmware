@@ -13,13 +13,14 @@
 int currentConnectionFD = -1;
 void handleReceivedPacket(char *data, int length);
 void monitorConnection(void);
+int sendTcpPacket(char *sendBuf, int size);
 
 void digiscope_net_init() {
 	// Start LwIP
 	LwIP_Init();
 
 	// Create TCP Task
-	xTaskCreate((void * ) &TCPTask, (const signed char * ) "TCPTX",
+	xTaskCreate((void * ) &TCPTask, (const signed char * ) "TCP",
 			TCPTASK_STACK_SIZE, NULL, TCPTASK_PRIORITY, NULL);
 }
 
@@ -111,7 +112,7 @@ void monitorConnection() {
 			// Other side disconnected
 			break;
 		}
-		Task_sleep(100);
+		vTaskDelay(100);
 	}
 
 	tfp_printf("Closed connection. fd: %d\n", currentConnectionFD);
@@ -120,5 +121,11 @@ void monitorConnection() {
 }
 
 void handleReceivedPacket(char *data, int length) {
-
+	for (i = 0; i < length; i++) {
+		/* Convert to ASCII upper case */
+		if (data[i] > 96) {
+			data[i] -= 32;
+		}
+	}
+	sendTcpPacket(data, length);
 }
