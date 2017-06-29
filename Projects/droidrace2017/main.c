@@ -8,6 +8,12 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#define AUTO_MODE 1
+#define MANUAL_MODE 2
+
+int mode = AUTO_MODE;
+
+
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -42,7 +48,18 @@ void LEDTask(void* pvParam) {
     int i = 0;
 
     for (;;) {
-        vTaskDelay(1000);
+    	if (control_ch1 > 95 && mode == MANUAL_MODE) {
+    		mode = AUTO_MODE;
+    		tfp_printf("Changing to MANUAL_MODE\n\r");
+    	}
+
+    	if (control_ch1 < 55 && mode == AUTO_MODE) {
+    		mode = MANUAL_MODE;
+    		tfp_printf("Changing to AUTO_MODE\n\r");
+    	}
+
+//    	tfp_printf("Int: %d\n\r", control_ch1);
+        vTaskDelay(10);
         BSP_LED_Toggle(LED2);
     }
 }

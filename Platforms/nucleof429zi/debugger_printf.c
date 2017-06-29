@@ -58,11 +58,7 @@ void debugger_printf_init() {
 void debugger_printf_putc(char x) {
 #ifdef ENABLE_DEBUGGER_UART
     int status = HAL_UART_Transmit(&UART_Debugger, &x, 1, 0);
-#ifdef FREERTOS
-    vTaskDelay(5);
-#else
     printf_delay(50000); // Wait 50000 clock cycles
-#endif
 #endif
 }
 

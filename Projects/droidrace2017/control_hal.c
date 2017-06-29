@@ -17,8 +17,8 @@ void control_init() {
   uint16_t prescalerValue = 1;
 
   /* Clocks */
-//  __TIM3_CLK_ENABLE();
-//  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __TIM3_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
 
   GPIO_InitStruct.Pin = GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -55,7 +55,6 @@ void control_init() {
 
   /* Start Input Capture */
   HAL_TIM_IC_Start_IT(&TIM3_Init, TIM_CHANNEL_1);
-
 }
 
 
@@ -69,8 +68,10 @@ void TIM3_IRQHandler (void) {
   /* Read and display the Input Capture value of Timer 3, channel 2 */
   input_capture_value = HAL_TIM_ReadCapturedValue(&TIM3_Init, TIM_CHANNEL_1);
 
-  tfp_printf("Capture interval: %d\n", input_capture_value - last_capture_val);
+  int tmp = input_capture_value - last_capture_val;
+
+  if (tmp <= 100 && tmp >= 50)
+	  control_ch1 = tmp;
 
   last_capture_val = input_capture_value;
-
 }

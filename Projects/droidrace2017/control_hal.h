@@ -11,5 +11,7 @@
 
 void control_init();
 
+extern int control_ch1;
+
 
 #endif //DROID_CONTROL_HAL_H
