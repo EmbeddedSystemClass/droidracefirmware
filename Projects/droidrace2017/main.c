@@ -23,7 +23,7 @@ int main(void) {
 
     droid_cli_init();
     networking_init();
-    //control_init();
+    control_init();
 
     /* Start the LED Task */
     xTaskCreate((void *) &LEDTask, (const signed char *) "LED", LEDTASK_STACK_SIZE, NULL, LEDTASK_PRIORITY, NULL);

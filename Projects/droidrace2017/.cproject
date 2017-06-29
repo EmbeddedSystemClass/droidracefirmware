@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
-		<cconfiguration id="com.atollic.truestudio.exe.debug.toolchain.2101218197">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.toolchain.2101218197" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+		<cconfiguration id="fr.ac6.managedbuild.toolchain.gnu.cross.base.1185152154">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.toolchain.gnu.cross.base.1185152154" moduleId="org.eclipse.cdt.core.settings" name="Default">
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.atollic.truestudio.exe.debug.toolchain.2101218197" name="Debug" parent="org.eclipse.cdt.build.core.emptycfg">
-					<folderInfo id="com.atollic.truestudio.exe.debug.toolchain.2101218197.396394158" name="/" resourcePath="">
-						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.135681939" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
-							<option id="com.atollic.truestudio.toolchain_options.mcu.1288235059" superClass="com.atollic.truestudio.toolchain_options.mcu" useByScannerDiscovery="false" value="STM32F429ZI" valueType="string"/>
-							<option id="com.atollic.truestudio.toolchain_options.vendor.2043007516" superClass="com.atollic.truestudio.toolchain_options.vendor" useByScannerDiscovery="false" value="STMicroelectronics" valueType="string"/>
-							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.452211377" isAbstract="false" name="Debug platform" osList="all" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
-							<builder buildPath="${workspace_loc:/Droid}/Debug" customBuilderProperties="toolChainpathType=1|toolChainpathString=/opt/Atollic_TrueSTUDIO_for_ARM_7.1.2/ARMTools/bin|" id="com.atollic.truestudio.mbs.builder1.1686576581" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1"/>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.357921923" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
-								<option id="com.atollic.truestudio.common_options.target.fpucore.1703330770" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16" valueType="enumerated"/>
-								<inputType id="com.atollic.truestudio.as.input.693613907" name="Input" superClass="com.atollic.truestudio.as.input"/>
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="fr.ac6.managedbuild.toolchain.gnu.cross.base.1185152154" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="fr.ac6.managedbuild.toolchain.gnu.cross.base.1185152154.1765193383" name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.base.792798555" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.base">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.prefix.1541857219" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.path.333830943" name="Path" superClass="fr.ac6.managedbuild.option.gnu.cross.path"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.224315808" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1427742228" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.322619805" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.600167153" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.instructionSet.1714671218" name="Instruction Set" superClass="fr.ac6.managedbuild.option.gnu.cross.instructionSet"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1029270062" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder id="fr.ac6.managedbuild.builder.gnu.cross.1663283589" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.516216345" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.901012375" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1720407647" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
 							</tool>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1263704597" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
-								<option id="com.atollic.truestudio.common_options.target.fpucore.2025275597" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16" valueType="enumerated"/>
-								<inputType id="com.atollic.truestudio.gcc.input.1767308829" superClass="com.atollic.truestudio.gcc.input"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.759651372" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.459028068" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1846051620" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
 							</tool>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1349347691" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
-								<option id="com.atollic.truestudio.common_options.target.fpucore.1284847224" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16" valueType="enumerated"/>
-								<inputType id="com.atollic.truestudio.ld.input.1124231541" name="Input" superClass="com.atollic.truestudio.ld.input">
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.296545234" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.720490709" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.737462944" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1955209229" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp"/>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.39085603" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc"/>
-							<tool id="com.atollic.truestudio.ar.base.1207037546" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
-							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.2074695259" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1839530276" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1037568484" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.17051771" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.2038149881" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -46,11 +54,17 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="Droid.null.1641443917" name="Droid"/>
+		<project id="droidrace2017.null.349387307" name="droidrace2017"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/droidrace2017"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>

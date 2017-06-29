@@ -41,7 +41,7 @@ SRCS += $(TINYPRINTF_PATH)/*.c
 ###################################################
 #        These flags shouldn't change		  #
 ###################################################
-CFLAGS  = -g -O1 -T$(PLATFORM_PATH)/STM32F429ZITx_FLASH.ld -Wmaybe-uninitialized
+CFLAGS  = -g -T$(PLATFORM_PATH)/STM32F429ZITx_FLASH.ld -Wmaybe-uninitialized
 CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m4 -mthumb-interwork
 CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 ###################################################

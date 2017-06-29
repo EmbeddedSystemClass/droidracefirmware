@@ -6,7 +6,7 @@
 
 static TIM_HandleTypeDef TIM3_Init;
 
-void tim3_irqhandler (void);
+void TIM3_IRQHandler (void);
 
 
 void control_init() {
@@ -17,8 +17,8 @@ void control_init() {
   uint16_t prescalerValue = 1;
 
   /* Clocks */
-  __TIM3_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+//  __TIM3_CLK_ENABLE();
+//  __HAL_RCC_GPIOA_CLK_ENABLE();
 
   GPIO_InitStruct.Pin = GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -46,8 +46,7 @@ void control_init() {
   /* Set priority of Timer 3 Interrupt [0 (HIGH priority) to 15(LOW priority)] */
   HAL_NVIC_SetPriority(TIM3_IRQn, 10, 0);	//Set Main priority ot 10 and sub-priority ot 0.
 
-  //Enable Timer 3 interrupt and interrupt vector
-  NVIC_SetVector(TIM3_IRQn, (uint32_t)&tim3_irqhandler);
+  //Enable Timer 3 interrupt
   NVIC_EnableIRQ(TIM3_IRQn);
 
   /* Enable input capture for Timer 3, channel 1 */
@@ -60,7 +59,7 @@ void control_init() {
 }
 
 
-void tim3_irqhandler (void) {
+void TIM3_IRQHandler (void) {
   static unsigned int last_capture_val = 0;
   unsigned int input_capture_value;
 

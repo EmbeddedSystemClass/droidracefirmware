@@ -22,5 +22,12 @@
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>Platform</name>
+			<value>file:/Users/timhadwen/Desktop/Firmware/Platforms</value>
+		</variable>
+	</variableList>
 </projectDescription>
