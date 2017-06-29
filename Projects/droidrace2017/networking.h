@@ -27,21 +27,18 @@ extern "C" {
 
 void networking_init();
 void TCPTask(void * pvParameters);
+int TCPIsConnected();
 
-typedef struct {
-    struct sockaddr host;
-    int lastkeepalive;
-    int active;
-} ClientConnection;
-
-    /* Defines */
+/* Defines */
 #define TCP_PORT 3000
 #define TCP_PACKET_SIZE 256
+#define TCP_SEND_QUEUE_SIZE 5
 
 extern uint32_t nucleoIPAddress;
-extern int currentConnectionFD;
 
-    /* FreeRTOS Settings */
+extern QueueHandle_t TCPSendQueue;
+
+/* FreeRTOS Settings */
 #define TCPTASK_PRIORITY   ( tskIDLE_PRIORITY + 2 )
 #define TCPTASK_STACK_SIZE  ( configMINIMAL_STACK_SIZE * 6 )
 

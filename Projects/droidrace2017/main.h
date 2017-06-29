@@ -37,6 +37,7 @@ extern "C" {
 
 #include "droid_cli.h"
 #include "networking.h"
+#include "control_hal.h"
 
 
 

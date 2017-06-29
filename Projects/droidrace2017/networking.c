@@ -7,7 +7,9 @@
 
 #include "networking.h"
 
-int currentConnectionFD = -1;
+QueueHandle_t TCPSendQueue;
+
+static int currentConnectionFD = -1;
 void handleReceivedPacket(char *data, int length);
 void monitorConnection(void);
 int sendTcpPacket(char *sendBuf, int size);
@@ -19,6 +21,13 @@ void networking_init() {
 	// Create TCP Task
 	xTaskCreate((void * ) &TCPTask, (const signed char * ) "TCP",
 			TCPTASK_STACK_SIZE, NULL, TCPTASK_PRIORITY, NULL);
+}
+
+int TCPIsConnected() {
+	if (currentConnectionFD == -1) {
+		return 0;
+	}
+	return 1;
 }
 
 int sendTcpPacket(char *sendBuf, int size) {
@@ -42,6 +51,8 @@ void TCPTask(void * pvParameters) {
 	int optval;
 	int optlen = sizeof(optval);
 	socklen_t addrlen = sizeof(clientAddr);
+
+	TCPSendQueue = xQueueCreate(TCP_SEND_QUEUE_SIZE, sizeof(char) * TCP_PACKET_SIZE);
 
 	server = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	if (server == -1) {
