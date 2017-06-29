@@ -10,8 +10,10 @@
 #include "stm32f4xx_it.h"
 
 void control_init();
+void control_channel1_init();
+void control_channel2_init();
 
-extern int control_ch1;
+extern int input_channels[3];
 
 
 #endif //DROID_CONTROL_HAL_H

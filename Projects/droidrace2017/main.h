@@ -45,7 +45,7 @@ extern "C" {
 #define LEDTASK_PRIORITY   ( tskIDLE_PRIORITY + 2 )
 #define LEDTASK_STACK_SIZE  ( configMINIMAL_STACK_SIZE * 1 )
 
-int control_ch1 = 0;
+int input_channels[3];
 
 
 #ifdef __cplusplus

@@ -48,19 +48,30 @@ void LEDTask(void* pvParam) {
     int i = 0;
 
     for (;;) {
-    	if (control_ch1 > 95 && mode == MANUAL_MODE) {
-    		mode = AUTO_MODE;
-    		tfp_printf("Changing to MANUAL_MODE\n\r");
+    	switch(mode) {
+    	case MANUAL_MODE:
+    		if (input_channels[1] < 55 && input_channels[0] > 95) {
+    			mode = AUTO_MODE;
+    			tfp_printf("Changing to MANUAL_MODE\n\r");
+    			BSP_LED_On(LED1);
+    			BSP_LED_Off(LED2);
+    		}
+    		break;
+
+    	case AUTO_MODE:
+    		if (input_channels[1] > 95  && input_channels[0] > 95) {
+				mode = MANUAL_MODE;
+				tfp_printf("Changing to AUTO_MODE\n\r");
+				BSP_LED_On(LED2);
+				BSP_LED_Off(LED1);
+			}
+    		break;
     	}
 
-    	if (control_ch1 < 55 && mode == AUTO_MODE) {
-    		mode = MANUAL_MODE;
-    		tfp_printf("Changing to AUTO_MODE\n\r");
-    	}
+//    	tfp_printf("1: %d 2: %d\n\r", input_channels[0], input_channels[1]);
 
-//    	tfp_printf("Int: %d\n\r", control_ch1);
-        vTaskDelay(10);
-        BSP_LED_Toggle(LED2);
+        vTaskDelay(100);
+        BSP_LED_Toggle(LED3);
     }
 }
 
