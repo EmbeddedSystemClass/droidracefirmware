@@ -73,7 +73,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: proj
 
-install: all prog
+install: clean all prog
 
 lib:
 	$(MAKE) -C lib

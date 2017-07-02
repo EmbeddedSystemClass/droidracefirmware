@@ -21,6 +21,11 @@ void control_channel1_init();
 void control_channel2_init();
 
 extern int input_channels[3];
+void setSteering(float val);
+void setSpeed(float val);
+void setDuty(float val);
+void setDuty2(float val);
+
 
 
 #endif //DROID_CONTROL_HAL_H

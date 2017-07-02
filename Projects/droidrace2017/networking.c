@@ -129,6 +129,13 @@ void monitorConnection() {
 }
 
 void handleReceivedPacket(char *data, int length) {
+	int value = 0;
+	if (data[0] == 'T') {
+
+	} else if (data[0] = 'S') {
+		sscanf(data, "S%d", value);
+	}
+
 	int i;
 	for (i = 0; i < length; i++) {
 		/* Convert to ASCII upper case */
@@ -136,5 +143,5 @@ void handleReceivedPacket(char *data, int length) {
 			data[i] -= 32;
 		}
 	}
-	sendTcpPacket(data, length);
+//	sendTcpPacket(data, length);
 }

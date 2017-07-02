@@ -48,20 +48,24 @@ void LEDTask(void* pvParam) {
 	for (;;) {
 		switch (mode) {
 		case MANUAL_MODE:
-			if (input_channels[1] < 55 && input_channels[0] > 95) {
+			BSP_LED_On(LED1);
+			BSP_LED_Off(LED2);
+			goFast(0);
+			setSteering(50);
+			if (input_channels[1] < 25) {
 				mode = AUTO_MODE;
-				tfp_printf("Changing to MANUAL_MODE\n\r");
-				BSP_LED_On(LED1);
-				BSP_LED_Off(LED2);
+				tfp_printf("Changing to AUTO_MODE\n\r");
+
 			}
 			break;
 
 		case AUTO_MODE:
-			if (input_channels[1] > 95 && input_channels[0] > 95) {
+			BSP_LED_On(LED2);
+			BSP_LED_Off(LED1);
+			goFast(1);
+			if (input_channels[1] > 95) {
 				mode = MANUAL_MODE;
-				tfp_printf("Changing to AUTO_MODE\n\r");
-				BSP_LED_On(LED2);
-				BSP_LED_Off(LED1);
+				tfp_printf("Changing to MANUAL_MODE\n\r");
 			}
 			break;
 		}
