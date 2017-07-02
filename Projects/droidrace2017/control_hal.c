@@ -4,15 +4,18 @@
 
 #include "control_hal.h"
 
+static TIM_HandleTypeDef TIM1_Init;
 static TIM_HandleTypeDef TIM3_Init;
 static TIM_HandleTypeDef TIM4_Init;
 
 void TIM3_IRQHandler(void);
 void TIM4_IRQHandler(void);
+void motor_output_init();
 
 void control_init() {
 	control_channel1_init();
 	control_channel2_init();
+	motor_output_init();
 }
 
 void control_channel1_init() {
@@ -111,6 +114,51 @@ void control_channel2_init() {
 	HAL_TIM_IC_Start_IT(&TIM4_Init, TIM_CHANNEL_4);
 }
 
+void motor_output_init() {
+	GPIO_InitTypeDef GPIO_InitStruct;
+	TIM_OC_InitTypeDef PWMConfig;
+
+	uint16_t prescalerValue = 1;
+
+	/* Clocks */
+	__TIM1_CLK_ENABLE();
+	__HAL_RCC_GPIOE_CLK_ENABLE();
+
+	GPIO_InitStruct.Pin = GPIO_PIN_9;
+	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
+	GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
+	HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+	GPIO_InitStruct.Pin = GPIO_PIN_11;
+	HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+	prescalerValue = (uint16_t) ((SystemCoreClock / 2) / PWM_CLOCKFREQ) - 1;
+
+	/* Configure Timer 3 settings */
+	TIM1_Init.Instance = TIM1;					//Enable Timer 3
+	TIM1_Init.Init.Period = PWM_PERIOD;
+	TIM1_Init.Init.Prescaler = prescalerValue;	//Set prescale value
+	TIM1_Init.Init.ClockDivision = 0;			//Set clock division
+	TIM1_Init.Init.RepetitionCounter = 0; 		// Set Reload Value
+	TIM1_Init.Init.CounterMode = TIM_COUNTERMODE_UP;	//Set timer to count up.
+
+	PWMConfig.OCMode = TIM_OCMODE_PWM1;
+	PWMConfig.Pulse	= PWM_PULSEPERIOD;
+	PWMConfig.OCPolarity = TIM_OCPOLARITY_HIGH;
+	PWMConfig.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+	PWMConfig.OCFastMode = TIM_OCFAST_DISABLE;
+	PWMConfig.OCIdleState = TIM_OCIDLESTATE_RESET;
+	PWMConfig.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+
+	HAL_TIM_IC_Init(&TIM1_Init);
+	HAL_TIM_IC_ConfigChannel(&TIM1_Init, &PWMConfig, TIM_CHANNEL_1);
+	HAL_TIM_IC_ConfigChannel(&TIM1_Init, &PWMConfig, TIM_CHANNEL_2);
+	HAL_TIM_PWM_Start(&TIM1_Init, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&TIM1_Init, TIM_CHANNEL_2);
+
+}
 
 void TIM4_IRQHandler(void) {
 	static unsigned int last_capture_val = 0;
