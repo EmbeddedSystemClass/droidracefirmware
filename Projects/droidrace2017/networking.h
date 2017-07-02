@@ -24,6 +24,7 @@ extern "C" {
 #include "lwip/sockets.h"
 #include "lwip_init.h"
 #include <string.h>
+#include "control_hal.h"
 
 void networking_init();
 void TCPTask(void * pvParameters);

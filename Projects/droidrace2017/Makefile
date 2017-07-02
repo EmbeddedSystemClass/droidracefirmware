@@ -51,7 +51,7 @@ CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 #	    These flags CAN change		  #
 ###################################################
 CFLAGS += -I.
-CFLAGS += -DSTM32F429xx -DENABLE_DEBUGGER_UART -DENABLE_ETHERNET -DFREERTOS #-DUSE_DHCP
+CFLAGS += -DSTM32F429xx -DENABLE_DEBUGGER_UART -DENABLE_ETHERNET -DFREERTOS -DUSE_DHCP
 CFLAGS += -I$(CMSIS_PATH)/Include -I$(HAL_PATH)/Inc
 CFLAGS += -I$(FREERTOS_PATH)/include -I$(FREERTOS_PATH)/portable/GCC/ARM_CM4F
 CFLAGS += -I$(FREERTOS_PATH)/CMSIS_RTOS

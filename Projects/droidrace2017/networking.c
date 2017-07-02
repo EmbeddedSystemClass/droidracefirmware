@@ -111,8 +111,7 @@ void monitorConnection() {
 	char buffer[TCP_PACKET_SIZE] = { 0 };
 
 	while (1) {
-		bytesRcvd = recv(currentConnectionFD, buffer, TCP_PACKET_SIZE,
-				MSG_DONTWAIT);
+		bytesRcvd = recv(currentConnectionFD, buffer, TCP_PACKET_SIZE, MSG_DONTWAIT);
 		if (bytesRcvd > 0) {
 			handleReceivedPacket(buffer, bytesRcvd);
 			memset(buffer, '\0', TCP_PACKET_SIZE);
@@ -134,6 +133,8 @@ void handleReceivedPacket(char *data, int length) {
 
 	} else if (data[0] = 'S') {
 		sscanf(data, "S%d", value);
+		printf("Received steering packet %d\n\r", value);
+		setSteering(value);
 	}
 
 	int i;

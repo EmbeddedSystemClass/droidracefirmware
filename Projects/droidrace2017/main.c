@@ -12,6 +12,8 @@
 
 int mode = MANUAL_MODE;
 
+extern struct netif xnetif;
+
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
@@ -52,7 +54,7 @@ void LEDTask(void* pvParam) {
 			BSP_LED_Off(LED2);
 			goFast(0);
 			setSteering(50);
-			if (input_channels[1] < 25) {
+			if (input_channels[1] < 55) {
 				mode = AUTO_MODE;
 				tfp_printf("Changing to AUTO_MODE\n\r");
 
@@ -70,9 +72,11 @@ void LEDTask(void* pvParam) {
 			break;
 		}
 
+		tfp_printf("%d.%d.%d.%d\n\r", 0xff & xnetif.ip_addr.addr, 0xff & (xnetif.ip_addr.addr >> 8), 0xff & (xnetif.ip_addr.addr >> 16), 0xff & (xnetif.ip_addr.addr >> 24));
+
 //    	tfp_printf("1: %d 2: %d\n\r", input_channels[0], input_channels[1]);
 
-		vTaskDelay(100);
+		vTaskDelay(1000);
 		BSP_LED_Toggle(LED3);
 	}
 }
