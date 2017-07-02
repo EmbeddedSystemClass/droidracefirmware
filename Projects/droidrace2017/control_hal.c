@@ -111,7 +111,6 @@ void control_channel2_init() {
 	HAL_TIM_IC_Start_IT(&TIM4_Init, TIM_CHANNEL_4);
 }
 
-
 void TIM4_IRQHandler(void) {
 	static unsigned int last_capture_val = 0;
 	unsigned int input_capture_value;
@@ -139,7 +138,7 @@ void TIM3_IRQHandler(void) {
 	__HAL_TIM_CLEAR_IT(&TIM3_Init, TIM_IT_TRIGGER);
 
 	/* Read and display the Input Capture value of Timer 3, channel 2 */
-		input_capture_value = HAL_TIM_ReadCapturedValue(&TIM3_Init, TIM_CHANNEL_1);
+	input_capture_value = HAL_TIM_ReadCapturedValue(&TIM3_Init, TIM_CHANNEL_1);
 
 	int tmp = input_capture_value - last_capture_val;
 
